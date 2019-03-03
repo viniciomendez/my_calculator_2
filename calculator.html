@@ -7,11 +7,12 @@
 <body>
 	<h1>Calculadora de ......Vinicio Mendez......</h1>  
 	Number:  <input type="text" id="n1">  
-	<p><button onclick="potencia(4)"> x^4 </button></p>
-	<p><button onclick="potencia(3)"> x^3 </button></p>
-	<p><button onclick="potencia(2)"> x^2 </button></p>
-	<p><button onclick="inverso()"> 1/x </button></p>
-	<p><button onclick="limpiar()"> limpiar </button></p>
+	<p><button onclick="potencia(4)"	> x^4 </button></p>
+	<p><button onclick="potencia(3)"	> x^3 </button></p>
+	<p><button onclick="potencia(2)"	> x^2 </button></p>
+	<p><button onclick="inverso()"	> 1/x </button></p>
+	<p><button onclick="seno()"		> sen(x) </button></p>
+	<p><button onclick="limpiar()"	> limpiar </button></p>
 </body>
 </html>
 <script type="text/javascript">
@@ -25,5 +26,8 @@ function inverso() {
 function limpiar() {
 	num.value = '';
 	num.focus();
+}
+function seno() {
+	num.value = Math.sin(num.value);
 }
 </script>
