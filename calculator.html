@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Calculator II</title>
-		<meta charset="utf-8">
-		<script type="text/javascript">
-		function potencia(idx) {
-			var num = document.getElementById("n1");  
-			num.value = Math.pow(num.value, idx);
-		}
-		function inverso() {
-			var num = document.getElementById("n1");  
-			num.value = 1/num.value;
-		}
-		function limpiar() {
-			var num = document.getElementById("n1");  
-			num.value = '';
-			num.focus();
-		}
-		</script>
-	</head>
-	<body>
-		<h1>Calculadora de ......Vinicio Mendez......</h1>  
-		Number:  <input type="text" id="n1">  
-		<p><button onclick="potencia(3)"> x^3 </button></p>
-		<p><button onclick="potencia(2)"> x^2 </button></p>
-		<p><button onclick="inverso()"> 1/x </button></p>
-		<p><button onclick="limpiar()"> limpiar </button></p>
-	</body>
+<head>
+	<title>Calculator II</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Calculadora de ......Vinicio Mendez......</h1>  
+	Number:  <input type="text" id="n1">  
+	<p><button onclick="potencia(4)"> x^4 </button></p>
+	<p><button onclick="potencia(3)"> x^3 </button></p>
+	<p><button onclick="potencia(2)"> x^2 </button></p>
+	<p><button onclick="inverso()"> 1/x </button></p>
+	<p><button onclick="limpiar()"> limpiar </button></p>
+</body>
 </html>
+<script type="text/javascript">
+var num = document.getElementById("n1");  
+function potencia(indice) {
+	num.value = Math.pow(num.value, indice);
+}
+function inverso() {
+	num.value = 1/num.value;
+}
+function limpiar() {
+	num.value = '';
+	num.focus();
+}
+</script>
