@@ -8,6 +8,10 @@
 			var num = document.getElementById("n1");  
 			num.value = Math.pow(num.value, idx);
 		}
+		function inverso() {
+			var num = document.getElementById("n1");  
+			num.value = 1/num.value;
+		}
 		function limpiar() {
 			var num = document.getElementById("n1");  
 			num.value = '';
@@ -20,6 +24,7 @@
 		Number:  <input type="text" id="n1">  
 		<p><button onclick="potencia(3)"> x^3 </button></p>
 		<p><button onclick="potencia(2)"> x^2 </button></p>
+		<p><button onclick="inverso()"> 1/x </button></p>
 		<p><button onclick="limpiar()"> limpiar </button></p>
 	</body>
 </html>
