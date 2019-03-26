@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Calculator</title>
+		<title>Calculator II</title>
 		<meta charset="utf-8">
 		<script type="text/javascript">
-		function cube() {
+		function potencia(idx) {
 			var num = document.getElementById("n1");  
-			num.value = Math.pow(num.value, 3);
+			num.value = Math.pow(num.value, idx);
+		}
+		function limpiar() {
+			var num = document.getElementById("n1");  
+			num.value = '';
+			num.focus();
 		}
 		</script>
 	</head>
 	<body>
 		<h1>Calculadora de ......Vinicio Mendez......</h1>  
 		Number:  <input type="text" id="n1">  
-		<p><button onclick="cube()"> x^3 </button></p>
+		<p><button onclick="potencia(3)"> x^3 </button></p>
+		<p><button onclick="potencia(2)"> x^2 </button></p>
+		<p><button onclick="limpiar()"> limpiar </button></p>
 	</body>
 </html>
